@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaikh Mohammed Ilyaz | Bioinformatics Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #f4f4f9; /* Light Gray Background */
+            --secondary: #4e9eff; /* Bright Blue Accent */
+            --accent: #2ecc71; /* Green Accent */
+            --text: #333333; /* Dark Text */
+            --card: #ffffff; /* White Card Background */
+            --dark-header: #14162e; /* Original dark color for contrast on light BG */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--primary);
+            color: var(--text);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-header); /* Use dark blue for headings */
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255,255,255,0.95); /* White header background */
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            z-index: 10;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+        
+        nav h3 {
+            color: var(--dark-header);
+        }
+
+        .hero {
+            height: 65vh;
+            background: url("https://img.freepik.com/premium-photo/dna-sequencing-data-visualization-background_53876-162685.jpg?w=2000") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.65);
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: #ffffff; /* White text on hero image */
+        }
+
+        .hero-content p {
+            font-size: 1.4rem;
+            color: var(--secondary);
+        }
+
+        .card {
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Lighter shadow for white cards */
+        }
+
+        .skills, .projects, .certs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .badge, .project {
+            background: var(--primary); /* Use light gray for badges/projects to distinguish from card */
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text);
+            opacity: 0.7;
+        }
+
+        @media(max-width:768px){
+            .hero-content h1{font-size:2.5rem;}
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h3>Shaikh Mohammed Ilyaz</h3>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Shaikh Mohammed Ilyaz</h1>
+        <p>Bioinformatics Student</p>
+    </div>
+</section>
+
+<main class="container">
+
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <p>
+        I am a dedicated undergraduate Bioinformatics student passionate about bridging the gap between biological data and computational solutions. My focus is on developing practical skills in **genomic analysis, data interpretation, and programming** to solve complex biological problems. Through foundational coursework, hands-on projects, and external certifications, I am building a strong, results-oriented skill set in Python, R, and core Bioinformatics tools. I am consistently seeking opportunities to apply computation to drive meaningful discoveries in biological research and personalized medicine.
+    </p>
+</section>
+
+<section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="badge">
+            <h3>Bioinformatics Tools</h3>
+            <p>NCBI, BLAST, UniProt, PDB, EXPASY</p>
+        </div>
+        <div class="badge">
+            <h3>Programming</h3>
+            <p>Python (Basics, Pandas, NumPy), R (Basics)</p>
+        </div>
+        <div class="badge">
+            <h3>Other Skills</h3>
+            <p>Data Interpretation, Literature Review, Report Writing</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="card">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Applications of Bioinformatics in Healthcare</h3>
+            <p>
+                A study-based project exploring how bioinformatics supports disease diagnosis, 
+                drug discovery, and personalized medicine through published research.
+            </p>
+        </div>
+        <div class="project">
+            <h3>Introduction to Genomic Data Analysis</h3>
+            <p>
+                A beginner-level project focused on understanding genomic databases and 
+                basic sequence analysis using online tools.
+            </p>
+        </div>
+        <div class="project">
+            <h3>Python for Biological Data</h3>
+            <p>
+                Simple data handling and visualization tasks using Python to analyze 
+                sample biological datasets.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="certifications" class="card">
+    <h2>Certifications</h2>
+    <div class="certs">
+        <div class="badge">
+            <h3>Programming & Data</h3>
+            <p>R Programming – Johns Hopkins University<br>
+               Python Basics – University of Michigan<br>
+               Python for Data Science – IBM</p>
+        </div>
+        <div class="badge">
+            <h3>Bioinformatics</h3>
+            <p>Biology Meets Programming – UC San Diego<br>
+               Fundamental Skills in Bioinformatics – KAIST</p>
+        </div>
+        <div class="badge">
+            <h3>Additional Learning</h3>
+            <p>AI for Everyone – DeepLearning.AI<br>
+               Research Methods – University of London</p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 Shaikh Mohammed Ilyaz | Bioinformatics Portfolio</p>
+</footer>
+
+</body>
+</html>
